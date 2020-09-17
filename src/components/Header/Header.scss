@@ -1,0 +1,33 @@
+.header {
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: block;
+  }
+}
+
+.header__logo {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .header__logo {
+    margin: 10px 0;
+  }
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}

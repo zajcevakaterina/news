@@ -1,0 +1,35 @@
+@import '../../../styles/inputStyle';
+
+.textarea {
+  @extend %input;
+}
+
+.textarea__item {
+  @extend %input__item;
+  resize: none;
+  min-height: 100px;
+}
+
+.textarea__item:invalid{
+  box-shadow:none;
+}
+
+.textarea__item::-webkit-input-placeholder,
+.textarea__item::-moz-placeholder,
+.textarea__item:-moz-placeholder,
+.textarea__item:-ms-input-placeholder {
+  color: #c4c4c4;
+}
+
+.textarea__item:focus {
+  outline-color:#E5E5E5;
+  outline-width: 1px;
+}
+
+.textarea__item-error {
+  @extend %input__item-error;
+}
+
+.textarea__item-error_active {
+  @extend %input__item-error_active
+}

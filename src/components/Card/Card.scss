@@ -1,0 +1,87 @@
+.card {
+  height: 300px;
+  width: 365px;
+  border: 1px solid #b6bcbf;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 30px;
+  text-decoration: none;
+  color: #000;
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 300px;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 250px;
+    margin: 20px;
+  }
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__date {
+  font-size: 18px;
+  line-height: 1.33;
+  color: #b6bcbf;
+  margin: 0 0 12px;
+}
+
+.card__handlers {
+  display: flex;
+}
+
+.card__handler {
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.card__handler:hover {
+  opacity: .8;
+  transform: opacity .2s linear;
+}
+
+.card__handler_delete {
+  background-image: url(../../images/delete_icon.svg);
+}
+
+.card__handler_approve {
+  background-image: url(../../images/approveButton.svg);
+  margin-right: 20px;
+}
+
+.card__title {
+  font-size: 22px;
+  line-height: 1.15;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical;
+}
+
+.card__text {
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  padding: 0;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 7; 
+  -webkit-box-orient: vertical;
+}

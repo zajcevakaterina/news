@@ -1,0 +1,13 @@
+.page-heading {
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .page-heading {
+    font-size: 28px;
+    margin-right: 10px;
+  }
+}

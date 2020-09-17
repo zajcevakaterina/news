@@ -1,0 +1,45 @@
+@import '../../../styles/inputStyle';
+
+.input {
+  @extend %input;
+}
+
+.input__item {
+  @extend %input__item
+}
+
+.input_search {
+  width: 100%;
+  margin: 0;
+}
+
+.input__item_search {
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  margin: 0;
+  padding: 0 0 0 4px;
+}
+
+.input__item:invalid{
+  box-shadow:none;
+}
+
+.input__item::-webkit-input-placeholder,
+.input__item::-moz-placeholder,
+.input__item:-moz-placeholder,
+.input__item:-ms-input-placeholder {
+  color: #c4c4c4;
+}
+
+.input__item:focus {
+  outline-color:#E5E5E5;
+  outline-width: 1px;
+}
+
+.input__item-error {
+  @extend %input__item-error;
+}
+
+.input__item-error_active {
+  @extend %input__item-error_active
+}

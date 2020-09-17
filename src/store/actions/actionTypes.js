@@ -1,0 +1,4 @@
+export const SET_CURRENT_USER = 'SET_CURRENT_USER'
+export const DELETE_CURRENT_USER = 'DELETE_CURRENT_USER'
+
+export const NEWS_ADD = 'NEWS_ADD'

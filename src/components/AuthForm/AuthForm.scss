@@ -1,0 +1,12 @@
+@import '../../styles/colorConstants';
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form__error {
+  font-size: 14px;
+  color: $error-color;
+  min-height: 40px;
+}

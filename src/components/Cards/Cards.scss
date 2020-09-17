@@ -1,0 +1,10 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 640px) {
+  .cards {
+    justify-content: center;
+  }
+}
